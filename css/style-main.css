@@ -1,4 +1,12 @@
 /**********************************************
+        Fonts and others
+**********************************************/
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+/**********************************************
         Navbar Hamburger Animation
 **********************************************/
 .hamburger-animated{
@@ -114,21 +122,75 @@ body{
     overflow:hidden;
 }
 .main {
+    background-position: center center !important;
     padding-top: 60px;
     height: 100vh;
     width: 100vw;
-    background-image: url(../img/main-bg.png);
+    background: url(../img/main-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:#464646;
+    background-color:#071013;
     background-position: fixed;
-  }
-  @media only screen and (max-width: 767px) {
-    .main {
-        background-position: center center;
-      background-image: url(../img/mobile-bg.png) !important;
-    }
 }
-.main-texts h1{
-    text-align: center;
+.heading-div{
+    height: 100vh;
+}
+.heading{
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    padding-left: 100px;
+}
+.heading h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 65px;
+    font-weight: 600;
+}
+.heading span{
+    color: #d40303;
+}
+.heading button{
+    font-size: 25px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.btn-1{
+    color: white;
+    background: #071013;
+    transition: 0.7s ease all;
+}
+.btn-2{
+    color: white;
+    background: #d40303;
+    transition: 0.7s ease all;
+}
+.btn-1:hover{
+    background:rgb(243, 243, 243);
+    color: #071013;
+}
+.btn-2:hover{
+    background: rgb(243, 243, 243);
+    color:#d40303;
+}
+@media(max-width:676px)
+{
+    .heading{
+        padding-left: 20px;
+    }
+    .heading h1{
+        font-family: 'Poppins', sans-serif;
+        font-size: 53px;
+        font-weight: 600;
+    }
+    .heading button{
+        font-size: 15px;
+        margin-top: 8px;
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
