@@ -12,6 +12,14 @@ body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
+.btn {
+  box-shadow: none !important;
+}
+.btn:hover,
+.btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
 section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -88,7 +96,7 @@ section {
   border: none !important;
 }
 .hamburger-animated span {
-  background: #d40303;
+  background: #ffffff;
 }
 
 .hamburger-animated span:nth-child(1) {
